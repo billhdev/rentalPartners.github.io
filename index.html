@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Get Partners</title>
+</head>
+
+<body>
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h5 class="modal-title " id="exampleModalLabel">Sign Up Membership</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="row g-3">
+            <div class="row g-3">
+              <div class="col">
+                <label for="Firstname" class="form-label">Firstname</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="col">
+                <label for="Lastname" class="form-label">Lastname</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Password</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label">Address 2</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">City</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-primary">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark d-flex justify-content-around">
+    <div class="container ">
+
+      <a class="navbar-brand" href="#">GetAPartner</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#rental"
+        aria-controls="rental" aria-expanded="true" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="rental">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item text-center">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="bg-dark text-light p-5 text-center text-sm-start">
+    <div class="container d-sm-flex justify-content-between  align-items-center">
+      <div class="col-md-6">
+        <h1>Getting Bored and Looking for <span class="text-warning d-inline-block"> a Partner</span> ?</h1>
+        <p class="lead my-4">You can now rent a partner to spend your quality time and learn how to create personal
+          network. </p>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signUpModal">
+          Sign Up
+        </button>
+      </div>
+      <img class=" col-md-6 img-fluid w-50 d-none d-sm-block" src="./images/boyandgirl.svg" alt="boy and girl">
+    </div>
+
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="bg-warning text-light p-4">
+    <div class="container">
+      <div class="d-md-flex justify-content-between align-items-center">
+        <h3 class="mb-3mb-md-0">Sign Up For Our Newsletter</h3>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Enter Your Email" />
+          <button class="btn btn-dark btn-lg mx-2" type="button">Get Updates</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Activity Suggestion -->
+  <section id="activity" class="container">
+    <h1 class="my-5 text-center">Suggestion Activity</h1>
+    <div class="row d-flex">
+      <div class="col-md mb-4 text-center">
+        <div>
+          <img src="./images/groupHoldingHand.jpg" class="img-thumbnail img-fluid w-50 mb-3" alt="Group Holding Hand">
+          <div class=" d-flex flex-column justify-content-evenly">
+            <h4 class="card-text messageItem mb-3 text-warning">Let's do some housework with him/her
+            </h4>
+            <a href="#activity" class="btn btn-primary  messageBtn mx-auto">Click to see</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Opportunity in Long-Term Relationship  -->
+  <section id="oppo" class="bg-dark text-light p-5 text-sm-start">
+    <div class="container justify-content-evenly">
+      <h1>Opportunity to have Long-Term <span class="text-warning d-inline-block"> Relationship</span></h1>
+      <p class="lead my-4">Spending precious time with the partner and get to know more about their personality can
+        improve your communication and distance in long-term network. </p>
+      <img class="img-fluid w-50 d-none d-sm-block mx-auto" src="./images/goesout.svg" alt="going out for party">
+
+    </div>
+    <a href="#oppo" class="btn btn-light">
+      Read More <span class="bi bi-arrow-down-right-square"></span>
+    </a>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="container mb-4">
+    <h1 class="my-5 text-center">About Us</h1>
+
+    <div class="d-flex justify-content-between">
+      <img src="./images/founder.svg" class="card-img-top img-fluid w-50 d-none d-sm-block" alt="list of founder">
+      <div class="mx-5 align-self-center">
+        <p><span class="font-weight-bold">RentAPartner</span> was built since 2019 for people who have lack of
+          motivation for their relationship and helped
+          them to get improved the social networking purposes.</p>
+        <p>The establishment of the activity idea is to encourage young adult to spend their time wisely instead of
+          focusing social media.</p>
+        <p class="text-right"> - Garry Osborn (Founder) </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="p-3 bg-primary ">
+    <h1 class="my-5 text-center text-light ">Our Services</h1>
+    <div class="container">
+      <div class="row mb-3 text-center">
+        <div class="col-md services mx-2 card my-3 ">
+          <div class="card-header bg-secondary">
+            <h4>Bronze</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$30 <small class="text-muted">/ mo</small></h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, esse doloremque doloribus, rerum
+              consequatur voluptate accusamus.</p>
+            <button type="button" class="btn btn-block btn-outline-primary">Sign up</button>
+          </div>
+        </div>
+
+        <div class="col-md services mx-2 card my-3">
+          <div class="card-header bg-success">
+            <h4>Silver</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$45 <small class="text-muted">/ mo</small></h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, esse doloremque doloribus, rerum
+              consequatur voluptate accusamus.</p>
+            <button type="button" class="btn btn-block btn-outline-primary">Sign up</button>
+          </div>
+        </div>
+
+        <div class="col-md services mx-2 card my-3">
+          <div class="card-header bg-warning">
+            <h4>Gold</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$60 <small class="text-muted">/ mo</small></h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, esse doloremque doloribus, rerum
+              consequatur voluptate accusamus.</p>
+            <button type="button" class="btn btn-block btn-outline-primary">Sign up</button>
+          </div>
+        </div>
+
+        <div class="col-md services mx-2 card my-3">
+          <div class="card-header bg-info">
+            <h4>Platinum</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$80 <small class="text-muted">/ mo</small></h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, esse doloremque doloribus, rerum
+              consequatur voluptate accusamus.</p>
+            <button type="button" class="btn btn-block btn-outline-primary">Sign up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact Us -->
+  <section id="contact">
+    <h1 class="my-5 text-center">Get in touch with us</h1>
+    <div class="row mx-4">
+      <div class="col-md">
+        <div class=" d-flex flex-column align-items-center justify-content-md-center ">
+          <h4><strong>GetAPartner Inc</strong></h4>
+          <p class="mt-1">185 Oakmound Drive, Chicago, IL 60626</p>
+          <p class="mt-1">Telp : 773-381-6940 </p>
+          <p class="mt-1">Email : inquiy@GetAPartner.com<a href="mailto:inquiry@GetAPartner.com"></a></p>
+        </div>
+
+      </div>
+      <div id="Main-Content" class="col-md mx-4">
+        <div class="container">
+          <form id="Email-Collector" action="#" method="POST">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingName" placeholder="Name" name="fullName">
+              <label for="floatingName">Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
+                name="emailAddress">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <textarea class="form-control" style="height: 100px" placeholder="Leave a message here"
+                id="floatingTextarea" name="textMessage"></textarea>
+              <label for="floatingTextarea">Message</label>
+            </div>
+            <div class="col-12 mb-5">
+              <button type="submit" class="btn btn-primary">Submit form</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="text-muted py-5 text-center  bg-dark text-light">
+    <div class="container">
+      <p class="float-end mb-1">
+        <a href="#"><i class="bi bi-arrow-up-circle-fill h1"></i></a>
+      </p>
+      <p class="mb-1">Copyright © 2022 RentAPartner. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- Start for JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
